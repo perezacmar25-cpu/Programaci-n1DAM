@@ -1,0 +1,14 @@
+package ejemplopoliforfismo;
+
+public class OperacionesFiguras {
+
+	public double calcularElAreaDeUnaFigura(Figura f) {
+		
+		return f.calcularArea();
+		
+	}
+	
+	
+	
+	
+}

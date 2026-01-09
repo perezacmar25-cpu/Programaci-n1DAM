@@ -1,0 +1,20 @@
+package ejercicio07;
+import utilidades.Leer;
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String cara="cara";
+		String cruz="cruz";
+		String opcion;
+		Moneda mon;
+		System.out.println("Elige, ¿cara o cruz?");
+		opcion=Leer.dato();
+		
+		mon=new Moneda();
+		
+		
+	}
+
+}

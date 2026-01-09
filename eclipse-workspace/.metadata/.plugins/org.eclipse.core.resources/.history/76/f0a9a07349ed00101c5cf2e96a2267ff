@@ -1,0 +1,5 @@
+package ejemplopoliforfismo;
+
+public class Circulo extends Figura {
+
+}

@@ -1,0 +1,39 @@
+package ejercicio07;
+
+import java.util.Random;
+
+public class Moneda {
+
+	private int num;
+	
+	
+	public int tirarMoneda() {
+		int desde=1;
+		int hasta=2;
+		int num;
+		Random r= new Random(System.nanoTime());
+		num=r.nextInt(hasta-desde+1)+desde;
+		return num;
+		
+	}
+	
+	public int ganador(String opcion) {
+		int desde=1;
+		int hasta=2;
+		int num;
+		Random r= new Random(System.nanoTime());
+		num=r.nextInt(hasta-desde+1)+desde;
+		
+		if(num.equals(opcion)) {
+			System.out.println("Felicidades, ha ganado");
+			
+		}else {
+			System.out.println("Ha perdido");
+		}
+		
+		
+	}
+	
+	
+	
+}

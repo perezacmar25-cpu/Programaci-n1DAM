@@ -1,0 +1,11 @@
+package ejercicio07;
+
+public class Moneda {
+
+	private int cruz=1;
+	private int cara=2;
+	
+	
+	
+	
+}

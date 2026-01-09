@@ -1,0 +1,45 @@
+package ejemplopoliforfismo;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Cuadrado c1 = new Cuadrado("Primer cuadrado","Rojo",1.0);
+		
+		
+		Circulo ci1 = new Circulo();
+		
+		
+		Figura f= new Cuadrado();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

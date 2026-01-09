@@ -1,0 +1,40 @@
+package ejemplopoliforfismo;
+
+public class Cuadrado extends Figura {
+
+	
+	private double Lado;
+	
+	
+	
+	public Cuadrado() {
+		
+		
+		
+	}
+
+
+	public Cuadrado(String nombre, String color) {
+		super(nombre, color);
+	}
+
+
+	public double getLado() {
+		return Lado;
+	}
+
+
+	public void setLado(double lado) {
+		Lado = lado;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

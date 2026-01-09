@@ -1,0 +1,59 @@
+package ejercicio09;
+import utilidades.Leer;
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int desde=1,hasta=99999, numPapeletas , num;
+		Sorteo sor;
+		double pagar;
+		int op, op2;
+		
+		sor=new Sorteo(desde, hasta);
+		
+		do {
+		System.out.println("Pulsa 1 si prefiere decidir usted el número que va a comprar");
+		System.out.println("Pulsa 2 si quiere que lo decida la máquina aleatoriamente");
+		System.out.println("Pulsa 0 si quiere salir");
+		op=Leer.datoInt();
+		
+		switch(op) {
+		case 1:
+				System.out.println("¿Cuántos papeletas desea comprar?");
+				numPapeletas=Leer.datoInt();
+				System.out.println("¿Qué número quiere?");
+				num=Leer.datoInt();
+				sor.comprarDecimo(numPapeletas);
+				sor.imprimirTotal(numPapeletas);
+				System.out.println("¿Con cuánto va a pagar?");
+				pagar=Leer.datoDouble();
+				sor.devolucion(numPapeletas, pagar);
+				sor.imprimirDevolucion(numPapeletas, pagar);
+				break;
+		
+		
+		case 2:
+			System.out.println("¿Cuántos papeletas desea comprar?");
+			numPapeletas=Leer.datoInt();
+			sor.generarNumero(numPapeletas);
+			System.out.println("Pulsa 1 si desea ver el número premiado");
+			System.out.println("Pulsa 0 si desea salir");
+			op2=Leer.datoInt();
+			switch(op2) {
+			
+			case 1:
+				 	sor.numeroPremiado();
+				 	sor.imprimirNumeroPremiado();
+			
+			
+			}
+
+
+				
+		
+		}
+
+	}while(op!=0);
+}
+}

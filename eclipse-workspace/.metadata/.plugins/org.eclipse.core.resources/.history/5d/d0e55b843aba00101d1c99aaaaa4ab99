@@ -1,0 +1,24 @@
+package ejercicio04;
+import utilidades.Leer;
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		double radio;
+		double altura;
+		Cilindro cil;
+		
+		System.out.println("Di un radio");
+		
+		radio=Leer.datoDouble();
+		
+		System.out.println("Di una altura");
+		
+		altura=Leer.datoDouble();
+		
+		 cil=new Cilindro();
+		
+	}
+
+}

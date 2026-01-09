@@ -1,0 +1,19 @@
+package ejercicio08;
+
+public class CuentaCorriente {
+
+	private double saldo=0;
+	private String nombre;
+	
+	
+		public CuentaCorriente() {
+			
+		this.saldo=saldo;
+		this.nombre=nombre;
+	
+		
+	}
+	
+	
+	
+}

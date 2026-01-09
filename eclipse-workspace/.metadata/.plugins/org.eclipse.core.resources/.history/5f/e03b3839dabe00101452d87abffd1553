@@ -1,0 +1,239 @@
+package ejercicio06;
+
+import java.util.Random;
+
+public class Generadora {
+
+	public int Quiniela(int opcion) {
+		int desde=0;
+		int hasta=2;
+		int cero=0;
+		int num;
+		boolean ganador;
+		Random r=new Random(System.nanoTime());
+		num=r.nextInt(hasta-desde+1)+desde;
+		if(opcion==num) {
+			ganador=true;
+			
+		}else {
+			
+			ganador=false;
+		}
+		
+		return num;
+	}
+	
+	public void quinielaGanador(int opcion2) {
+		int desde=1;
+		int hasta=3;
+		int cero=0;
+		int num;
+		boolean ganador;
+		Random r=new Random(System.nanoTime());
+		num=r.nextInt(hasta-desde+1)+desde;
+		if(opcion2==num) {
+			
+			ganador=true;
+			
+		}else {
+			
+			ganador=false;
+		}
+		
+		
+		if(ganador) {
+			System.out.println("Usted ha ganado");
+		}else {
+			System.out.println("Usted ha perdido");
+		}
+		
+		
+	}
+	
+	
+	
+	public boolean par(int opcion4) {
+		int desde=0;
+		int hasta=10;
+		int num;
+		int suma;
+		int cero=0;
+		int dos=2;
+		boolean resultado;
+		
+		
+		Random r=new Random(System.nanoTime());
+		num=r.nextInt(hasta-desde+1)+desde;
+		suma=num+opcion4;
+		
+		if(suma%dos==cero) {
+			
+			resultado=true;
+		}else {
+			
+			resultado=false;
+		}
+		
+		return resultado;
+	}
+		public boolean impar(int opcion4) {
+			int desde=0;
+			int hasta=10;
+			int num;
+			int suma;
+			int cero=0;
+			int dos=2;
+			boolean resultado;
+			
+			
+			Random r=new Random(System.nanoTime());
+			num=r.nextInt(hasta-desde+1)+desde;
+			suma=num+opcion4;
+			
+			if(suma%dos!=cero) {
+				
+				resultado=true;
+			}else {
+				
+				resultado=false;
+			}
+		
+			return resultado;
+		}
+	
+	
+		public void imprimirPar(int opcion) {
+			int desde=0;
+			int hasta=9;
+			int num;
+			int cero=0;
+			int dos=2;
+			int suma;
+			boolean resultado;
+			
+			
+			Random r=new Random(System.nanoTime());
+			num=r.nextInt(hasta-desde+1)+desde;
+			suma=num+opcion;
+			
+			if(suma%dos==cero) {
+				
+				resultado=true;
+			}else {
+				
+				resultado=false;
+			}
+		
+			
+			if(resultado) {
+				System.out.println("Ha ganado");
+			}else {
+				System.out.println("Ha perdido");
+			}
+		}
+		
+		
+		public void imprimirImpar(int opcion) {
+			int desde=0;
+			int hasta=9;
+			int num;
+			int dos=2;
+			int cero=0;
+			int suma;
+			boolean resultado;
+			
+			
+			Random r=new Random(System.nanoTime());
+			num=r.nextInt(hasta-desde+1)+desde;
+			suma=num+opcion;
+			
+			if(suma%dos!=cero) {
+				
+				resultado=true;
+			}else {
+				
+				resultado=false;
+			}
+		
+			
+			if(resultado) {
+				System.out.println("Ha ganado");
+			}else {
+				System.out.println("Ha perdido");
+			}
+		}
+		
+		public boolean primitiva(int primitiva) {
+			
+			int num;
+			int desde=1;
+			int hasta=49;
+			int contador=0;
+			int seis=6;
+			boolean victoria = false;
+			
+			
+			Random r= new Random(System.nanoTime());
+			
+			
+			for(int i=0; i<hasta;i++) {
+				num=r.nextInt(hasta-desde+1)+desde;
+				
+				if(num==primitiva) {
+					
+					contador++;
+					
+				}
+				
+				if(contador>seis) {
+					victoria=true;
+					
+				}else {
+					victoria=false;
+				}
+				
+			}
+			
+				return victoria;
+		}
+		
+		public void resultadoPrimitiva(int primitiva) {
+			int num;
+			int desde=1;
+			int hasta=49;
+			int contador=0;
+			int seis=6;
+			boolean victoria;
+			
+			
+			Random r= new Random(System.nanoTime());
+			
+			
+			for(int i=0; i<hasta;i++) {
+				num=r.nextInt(hasta-desde+1)+desde;
+				
+				if(num==primitiva) {
+					
+					contador++;
+					
+				}
+				
+				if(contador>seis) {
+					victoria=true;
+					
+				}else {
+					victoria=false;
+				}
+				
+				if(victoria) {
+					
+					System.out.println("Usted ha ganado la Primitiva");
+				}else {
+					System.out.println("Vuelva a participar");
+				}
+			
+			
+		}
+	
+}
+}

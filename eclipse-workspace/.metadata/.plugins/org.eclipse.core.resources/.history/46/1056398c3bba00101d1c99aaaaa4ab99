@@ -1,0 +1,21 @@
+package ejercicio04;
+
+public class Cilindro {
+	
+	private double volumen;
+	private double radio;
+	private double altura;
+	
+	public double Cilindro(double radio , double altura) {
+		this.radio=radio;
+		this.altura=altura;
+		
+	}
+	
+	public double calcularVolumen() {
+		
+		double volumen;
+		volumen=Math.PI*Math.pow(radio, 2)*altura;
+	}
+
+}

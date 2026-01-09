@@ -1,0 +1,11 @@
+package ejemplopoliforfismo;
+
+public class Circulo extends Figura {
+
+	public Circulo(String nombre, String color) {
+		super(nombre, color);
+	}
+	
+	
+
+}

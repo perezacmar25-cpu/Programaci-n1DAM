@@ -1,0 +1,169 @@
+package ejercicio09;
+
+import java.util.Random;
+
+public class Sorteo {
+
+	private int desde;
+	private int hasta;
+	private int num;
+	private double precioTotal;
+	
+	public Sorteo() {
+		this.num=num;
+		this.precioTotal=precioTotal;
+		this.desde = desde;
+		this.hasta = hasta;
+	}
+	
+	
+	
+	public double comprarDecimo (int numCupones) {
+		
+		double precioTotal;
+		double precio=20;
+		precioTotal=numCupones*precio;
+		return precioTotal;
+		
+	}
+	
+	public double devolucion(int numCupones,double pagar) {
+		
+		double precio=20; 
+		double devolucion;
+		precioTotal=numCupones*precio;
+		devolucion=pagar-precioTotal;
+		return devolucion;
+	}
+	
+	public void imprimirError(int numCupones, double pagar) {
+		devolucion(numCupones, pagar);
+		
+		if(pagar<precioTotal) {
+			System.out.println("Cantidad insuficiente");
+			
+		}else {
+			System.out.println("Pago realizado con éxito\n");
+			double total2;
+			total2=devolucion(numCupones, pagar);
+			System.out.printf("La devolución sería: %.2f€",total2);
+		}
+		
+		
+	}
+		
+		
+	public void imprimirTotal(int numCupones) {
+		double total;
+		total=comprarDecimo(numCupones);
+		System.out.printf("El total es: %.2f€",total);
+		}
+	
+	
+	public void generarNumero(int numPapeletas) {
+		desde=1;
+		hasta=99999;
+		int diezMil=10000;
+		int mil=1000;
+		int cien=100;
+		int diez=10;
+		Random r=new Random(System.nanoTime());
+		
+		num=r.nextInt(hasta-desde+1)+desde;
+		
+		if(num>diezMil) {
+			System.out.println("El número premiado es: "+num);
+		}
+		if(num<diezMil && num>mil) {
+			
+			System.out.println("El número premiado es: 0"+num);
+		}
+		if(num>mil && num<cien) {
+			
+			System.out.println("El número premiado es: 00"+num);
+		}
+		
+		if(num<diez) {
+			System.out.println("El número premiado es: 000"+num);
+		}
+		
+		
+	}
+	
+	public int numeroPremiado() {
+		desde=1;
+		hasta=99999;
+		Random r=new Random(System.nanoTime());
+		num=r.nextInt(hasta-desde+1)+desde;
+		return num;
+		
+	}
+	
+	public void imprimirNumeroPremiado() {
+		int diezMil=10000;
+		int mil=1000;
+		int cien=100;
+		int diez=10;
+		
+		if(num>diezMil) {
+			System.out.println("El número premiado es: "+num);
+		}
+		if(num<diezMil && num>mil) {
+			
+			System.out.println("El numero premiado es: \n0"+num);
+		}
+		if(num>mil && num<cien) {
+			
+			System.out.println("El numero premiado es: \n00"+num);
+		}
+		
+		if(num<diez) {
+			System.out.println("El numero premiado es: \n000"+num);
+		}
+		
+	}
+	
+	public boolean ganador(int numPapeletas) {
+		
+	
+		int num2;
+		generarNumero(numPapeletas);
+		Random r= new Random(System.nanoTime());
+		num2= r.nextInt(hasta-desde+1)+desde;
+		
+		if(num==num2) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	
+	public void imprimirGanador(int numPapeletas) {
+		
+		ganador(numPapeletas);
+		
+		
+
+		
+		
+	}
+	
+
+	
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

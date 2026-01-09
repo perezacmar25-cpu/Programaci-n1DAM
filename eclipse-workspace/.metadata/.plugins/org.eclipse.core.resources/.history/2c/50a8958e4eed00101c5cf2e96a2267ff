@@ -1,0 +1,16 @@
+package ejemplopoliforfismo;
+
+public class OperacionesFiguras {
+
+	public double calcularElAreaDeUnaFigura(Figura f) {
+		
+		return f.calcularArea();
+		
+	}
+	
+	public double calcularElPerimetroDeUnaFigura(Figura f) {
+		return f.calcularPerimetro();
+	}
+	
+	
+}

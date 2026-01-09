@@ -1,0 +1,59 @@
+package ejercicio08;
+
+public class CuentaCorriente {
+
+	private double saldo;
+	private String nombre;
+	
+	
+		public CuentaCorriente() {
+			
+		this.saldo=0.0;
+		this.nombre=nombre;
+	
+		
+	}
+	
+		public CuentaCorriente(double saldo, String nombre) {
+			this.saldo=saldo;
+			this.nombre=nombre;
+		}
+	//no devuelve saldo
+		
+		public void ingresar(double ingreso) {
+		}
+			
+			
+		
+		
+		public double retirar(double retirar) {
+			
+				
+				if(retirar>saldo) {
+					
+					
+					
+				}else {
+					saldo=saldo-retirar;
+					
+				}
+				return saldo;
+				
+			
+			
+		}
+		
+		public double calcularDolares() {
+			
+			double dolares=1.16;
+			
+			double cambioDolares;
+			
+			cambioDolares=this.saldo*dolares;
+			
+			return cambioDolares;
+		}
+	
+	
+	
+}

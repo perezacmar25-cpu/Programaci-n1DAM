@@ -1,0 +1,25 @@
+package ejemplosoperadores;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num=3;
+		int den=4;
+		int resultado;
+		
+		resultado=num/den;
+		
+		System.out.println("El resultado es: "+resultado);
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

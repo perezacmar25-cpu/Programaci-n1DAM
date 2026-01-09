@@ -1,0 +1,26 @@
+package ejemplosoperadores;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double num=3;
+		double den=4;
+		double cociente;
+		 
+		cociente=num/den;
+		System.out.println("Hola, este programa divide números");
+		
+		System.out.println("El resultado es: "+cociente);
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

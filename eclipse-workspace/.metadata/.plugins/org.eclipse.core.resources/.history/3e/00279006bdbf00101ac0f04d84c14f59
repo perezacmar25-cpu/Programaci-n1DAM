@@ -1,0 +1,49 @@
+package ejercicio09;
+
+public class Sorteo {
+
+	private int desde;
+	private int hasta;
+	
+	
+	public Sorteo(int desde, int hasta) {
+		this.desde = desde;
+		this.hasta = hasta;
+		
+	}
+	
+	public double comprarDecimo (int numCupones, double pagar) {
+		
+		double precioTotal;
+		double precio=20;
+		int devolucion;
+		precioTotal=numCupones*precio;
+		devolucion=pagar-precio;
+		return precioTotal;
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

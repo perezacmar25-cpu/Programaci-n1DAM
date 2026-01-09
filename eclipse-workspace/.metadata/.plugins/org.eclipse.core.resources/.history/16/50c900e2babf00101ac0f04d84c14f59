@@ -1,0 +1,36 @@
+package ejercicio09;
+
+public class Sorteo {
+
+	private int desde;
+	private int hasta;
+	
+	
+	public Sorteo(int desde, int hasta) {
+		this.desde = desde;
+		this.hasta = hasta;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

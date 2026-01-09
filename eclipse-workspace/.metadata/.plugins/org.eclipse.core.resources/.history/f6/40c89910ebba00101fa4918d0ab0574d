@@ -1,0 +1,27 @@
+package ejercicio04;
+
+public class Cilindro {
+	
+	private double volumen;
+	private double radio;
+	private double altura;
+	
+	public Cilindro(double radio , double altura) {
+		this.radio=radio;
+		this.altura=altura;
+		
+	}
+	
+	public double calcularVolumen() {
+		
+		
+		volumen=Math.PI*Math.pow(radio, 2)*altura;
+		return volumen;
+	}
+	
+	public void imprimirDatos(double total) {
+		System.out.printf("%.2f m2",total);
+		
+	}
+
+}

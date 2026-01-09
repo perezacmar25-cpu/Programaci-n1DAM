@@ -1,0 +1,20 @@
+package ejercicio08;
+import utilidades.Leer;
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		double saldo=0;
+		CuentaCorriente cue;
+		
+		System.out.println("¿Cuánto dinero quiere ingresar?");
+		saldo=Leer.datoDouble();
+		
+		cue=new CuentaCorriente();
+		
+		
+		
+	}
+
+}

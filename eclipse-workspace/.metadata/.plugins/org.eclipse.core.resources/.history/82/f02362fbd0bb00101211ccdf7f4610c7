@@ -1,0 +1,23 @@
+package ejercicio07;
+import utilidades.Leer;
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	
+		int opcion;
+		Moneda mon;
+		
+		System.out.println("Pulsa 1 si quiere cara");
+		System.out.println("Pulsa 2 si quiere cruz");
+		opcion=Leer.datoInt();
+		
+		mon=new Moneda();
+		
+		
+		
+		
+	}
+
+}

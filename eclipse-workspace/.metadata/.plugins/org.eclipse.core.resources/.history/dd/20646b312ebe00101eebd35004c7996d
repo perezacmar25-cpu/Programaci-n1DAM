@@ -1,0 +1,62 @@
+package ejercicio08;
+
+public class CuentaCorriente {
+
+	private double saldo;
+	private String nombre;
+	
+	
+		public CuentaCorriente(String nombre) {
+			
+		this.saldo=0.0;
+		this.nombre=nombre;
+	
+		
+	}
+	
+		public CuentaCorriente(double saldo, String nombre) {
+			this.saldo=saldo;
+			this.nombre=nombre;
+		}
+		
+
+		public double ingresar(double ingreso) {
+				saldo=saldo+ingreso;
+			//En caso de duda, devuelvo el resultado
+				return saldo;
+		}
+			
+			
+		
+		
+		public boolean retirar(double retirar) {
+			
+				
+				if(retirar>saldo) {
+					
+					return false;
+					
+				}else {
+					saldo=saldo-retirar;
+					
+				}
+				return true;
+				
+			
+			
+		}
+		
+		public double calcularDolares() {
+			
+			double dolares=1.16;
+			
+			double cambioDolares;
+			 
+			cambioDolares=saldo*dolares;
+			
+			return cambioDolares;
+		}
+	
+	
+	
+}

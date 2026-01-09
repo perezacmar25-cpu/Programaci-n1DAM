@@ -1,0 +1,25 @@
+package ejercicio04;
+
+public class Cilindro {
+	
+	private double radio;
+	private double altura;
+	
+	public Cilindro(double radio , double altura) {
+		this.radio=radio;
+		this.altura=altura;
+		
+	}
+	
+	public double calcularVolumen(double total) {
+		
+		total=Math.PI*Math.pow(radio, 2)*altura;
+		return total;
+	}
+	
+	public void imprimirDatos(double total) {
+		System.out.printf("El área es: %.2f m2",total);
+		
+	}
+
+}

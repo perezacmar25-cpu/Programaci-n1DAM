@@ -1,0 +1,70 @@
+package ejercicio06;
+import utilidades.Leer;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int opcion;
+		int op2;
+		int op3;
+		int op4;
+		int [] primitiva;
+		int tam=6;
+		primitiva=new int[tam];
+		Generadora gen;
+		do {
+
+			System.out.println("Hola, bienvenido al programa/n");
+			System.out.println("Pulsa 1 si quiere jugar una Quiniela");
+			System.out.println("Pulsa 2 si quiere jugar Pares o nones");
+			System.out.println("Pulsa 3 si quiere jugar a los chinos");
+			System.out.println("Pulsa 4 si quiere jugar a la Primitiva");
+			System.out.println("Pulsa 0 si quiere salir del programa");
+			opcion = Leer.datoInt();
+
+			gen = new Generadora();
+
+			switch (opcion) {
+
+			case 1:
+
+					System.out.println("Elige un número. El 1 si cree que ganará el equipo local. El 2 si cree que ganará el visitante o el 3 si cree que quedarán empate.");
+					op2 = Leer.datoInt();
+					gen.Quiniela(op2);
+					gen.quinielaGanador(op2);
+					break;
+
+			case 2:
+					System.out.println("Pulsa 1 si quiere elegir los números pares");
+					System.out.println("Pulsa 2 si quiere elegir los números impares");
+					op3 = Leer.datoInt();
+
+					switch (op3) {
+					case 1:
+							System.out.println("Ahora elige el número que quiere sacar");
+							op4 = Leer.datoInt();
+							gen.par(opcion);
+							gen.imprimirPar(op4);
+							
+							break;
+							
+					case 2:
+						System.out.println("Ahora elige el número que quiere sacar");
+						op4 = Leer.datoInt();
+						gen.impar(op4);
+						gen.imprimirImpar(op4);
+						break;
+
+				}
+					
+				
+		
+					
+			}
+
+		} while (opcion != 0);
+
+	}
+}
