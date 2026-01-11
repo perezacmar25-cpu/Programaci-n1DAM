@@ -21,6 +21,14 @@ public class Electronica extends Producto{
 	public String toString() {
 		return "Electronica [impuestoExtra=" + impuestoExtra + "]";
 	}
+	
+	
+	public double calcularPrecio (int cant){
+		
+		double precio;
+		precio= super.calcularPrecio(cant)+impuestoExtra;
+		return precio;
+	}
 
 
 	

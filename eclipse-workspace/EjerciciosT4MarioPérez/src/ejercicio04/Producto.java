@@ -46,7 +46,14 @@ public class Producto {
 
 	
 	
-	public double calcularPrecio();
+	public double calcularPrecio(int cantidad) {
+		
+		double precioInicial;
+		precioInicial=precioUnitario*cantidad;
+		return precioInicial;	
+		
+		
+	}
 	
 	
 

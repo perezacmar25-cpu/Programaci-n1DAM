@@ -1,4 +1,4 @@
-	package ejercicio04;
+package ejercicio04;
 
 public class LineaDeVenta {
 	
@@ -32,7 +32,12 @@ public class LineaDeVenta {
 	}
 	
 		
-	
+	public void agregarProducto(Producto p, int cont) {
+		
+		
+		
+		
+	}
 	
 	
 	
