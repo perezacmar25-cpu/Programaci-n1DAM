@@ -32,7 +32,7 @@ public abstract class  Venta {
 		
 	}
 	
-		public double calcular
+		
 		
 		
 		
